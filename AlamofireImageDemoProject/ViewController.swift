@@ -16,6 +16,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 300, height: 300))
+        self.view.addSubview(imageView)
         
         let url: URL = URL(string: "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png")!
         imageView.af.setImage(withURL: url)
